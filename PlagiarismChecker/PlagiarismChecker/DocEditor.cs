@@ -77,10 +77,5 @@ namespace PlagiarismChecker.App_Code
             return wordCount;
         }
 
-
-        private static void storeInDatabase(Dictionary<string, int> documentData)
-        {
-            DatabaseController.InsertDocument(documentData);
-        }
     }
 }

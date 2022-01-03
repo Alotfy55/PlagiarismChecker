@@ -22,7 +22,7 @@ namespace PlagiarismChecker
 
             Checker.Documents = DatabaseController.getData();
 
-            double similarity = 0;
+            float similarity = 0;
             foreach (Dictionary<string, int> document in Checker.Documents)
             {
                 similarity = Math.Max(Checker.MesaureSimilarity(doc, document), similarity);
@@ -34,9 +34,14 @@ namespace PlagiarismChecker
             // save in database
             if (similarity < 99)
             {
-                DatabaseController.InsertDocument(doc);
+                if (CheckBox1.Checked)
+                {
+                    AppController.storeInDatabase(doc);
+                }
             }
-            Checker.Documents = DatabaseController.getData();
+            SimilarityReading reading = new SimilarityReading(FileUpload1.FileName, "Database", similarity);
+            AppController.StoreHistoryReading(reading);
+
         }
     }
 }

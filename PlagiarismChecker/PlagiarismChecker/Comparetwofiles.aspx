@@ -47,7 +47,7 @@
               </tr>
               <tr>
                 <td >Plagiarism Percentage :</td>
-                <td ><asp:TextBox ID="TextBox1" runat="server" Enabled="false"></asp:TextBox></td>
+                <td ><asp:TextBox ID="TextBox1" runat="server" BackColor="whitesmoke" ForeColor="Red" Enabled="false"></asp:TextBox></td>
               </tr>
             </tbody>
             </table>

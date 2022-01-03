@@ -11,6 +11,8 @@ namespace PlagiarismChecker.App_Code
 {
     public class AppController
     {
+        public static string USERNAME = "";
+
         public static string Save_Directory = "D:\\SaveData\\";
         // read saved data into program 
         public static Dictionary<string,int> getDocumentDictionary(string filename)
@@ -50,6 +52,21 @@ namespace PlagiarismChecker.App_Code
             {
 
             }
+        }
+
+        public static void storeInDatabase(Dictionary<string, int> documentData)
+        {
+            DatabaseController.InsertDocument(documentData);
+        }
+
+        public static List<SimilarityReading> GetSimilarityReadings()
+        {
+            return DatabaseController.GetUserHistory(USERNAME);
+        }
+
+        public static void StoreHistoryReading(SimilarityReading reading)
+        {
+            DatabaseController.insertHistoryData(reading, USERNAME);
         }
     }
 }

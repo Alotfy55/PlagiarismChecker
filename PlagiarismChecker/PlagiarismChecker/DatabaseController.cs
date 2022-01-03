@@ -72,7 +72,7 @@ namespace PlagiarismChecker
         }
 
         // Users Database Controller
-        public bool checkUsernameAvailability(string username)
+        public static bool checkUsernameAvailability(string username)
         {
             SqlConnection conn = new SqlConnection(ConnectionString);
             conn.Open();
@@ -93,7 +93,7 @@ namespace PlagiarismChecker
             return available;
         }
 
-        public void insertData(string username, string password)
+        public static void insertData(string username, string password)
         {
             SqlConnection conn = new SqlConnection(ConnectionString);
             conn.Open();
@@ -103,7 +103,7 @@ namespace PlagiarismChecker
             conn.Close();
         }
 
-        public bool checkPassword(string username, string Password)
+        public static bool checkPassword(string username, string Password)
         {
             SqlConnection conn = new SqlConnection(ConnectionString);
             conn.Open();
@@ -125,7 +125,7 @@ namespace PlagiarismChecker
         }
 
         // DocumentsSimilarity Database Controller
-        public List<SimilarityReading> GetUserHistory(string username)
+        public static List<SimilarityReading> GetUserHistory(string username)
         {
 
             SqlConnection conn = new SqlConnection(ConnectionString);
@@ -139,7 +139,6 @@ namespace PlagiarismChecker
 
             while (Data.Read())
             {
-                // 0 id    1 order  2 high  3 low   4 date
                 UserDocHistory.Add(new SimilarityReading(Data[2].ToString() , Data[3].ToString() , float.Parse(Data[4].ToString() )));
             }
 
@@ -148,12 +147,23 @@ namespace PlagiarismChecker
             return UserDocHistory;
         }
 
+        public static void insertHistoryData(SimilarityReading reading , string username)
+        {
+            SqlConnection conn = new SqlConnection(ConnectionString);
+            conn.Open();
+            SqlCommand comm = new SqlCommand("insert into DocumentsSim (Username,Document1,Document2,Similarity) values(@d,@a,@b,@c)", conn);
+            comm.Parameters.Add(new SqlParameter("@a", reading.doc1Name));
+            comm.Parameters.Add(new SqlParameter("@b", reading.doc2Name));
+            comm.Parameters.Add(new SqlParameter("@c", reading.similarity));
+            comm.Parameters.Add(new SqlParameter("@d", username));
+            conn.Close();
+        }
     }
     public class SimilarityReading
     {
-        string doc1Name;
-        string doc2Name;
-        float similarity;
+        public string doc1Name;
+        public string doc2Name;
+        public float similarity;
 
         public SimilarityReading(string doc1Name, string doc2Name, float similarity)
         {
