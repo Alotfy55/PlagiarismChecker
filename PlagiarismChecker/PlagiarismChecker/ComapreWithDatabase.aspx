@@ -44,7 +44,7 @@
               </tr>
               
               <tr>
-                <td class="auto-style1" >Plagiarism Percentage : <asp:TextBox ID="TextBox1" runat="server" BackColor="gray" Enabled="false" ></asp:TextBox></td>
+                <td class="auto-style1" >Plagiarism Percentage : <asp:TextBox ID="TextBox1" runat="server" BackColor="whitesmoke" ForeColor="Red" Enabled="false" ></asp:TextBox></td>
               </tr>
             </table>          
         </div>

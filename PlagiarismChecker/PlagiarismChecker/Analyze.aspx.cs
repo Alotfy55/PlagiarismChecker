@@ -24,6 +24,7 @@ namespace PlagiarismChecker
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            AppController.SaveFile(FileUpload1);
             Dictionary<string, int> words = AppController.getDocumentDictionary(FileUpload1.FileName);
             List<String> word = new List<string>();
             List<int> count = new List<int>();
