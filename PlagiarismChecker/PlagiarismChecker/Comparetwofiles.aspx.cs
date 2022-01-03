@@ -16,7 +16,7 @@ namespace PlagiarismChecker
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            Image1.Visible = false;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -40,6 +40,10 @@ namespace PlagiarismChecker
             }
             SimilarityReading reading = new SimilarityReading(FileUpload1.FileName, FileUpload2.FileName, similarity);
             AppController.StoreHistoryReading(reading);
+            if (similarity > 70) 
+            {
+                Image1.Visible = true;
+            }
         }
     }
 }

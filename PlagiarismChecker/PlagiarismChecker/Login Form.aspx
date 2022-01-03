@@ -92,6 +92,9 @@
                 </tbody>
                 </table>
         </div>
+    <p>
+        <asp:Image ID="Image1" runat="server" alt="gif" src="tumblr_mj9fq20Jou1rthlxmo1_500"/>
+        </p>
     </form>
-</body>
+    </body>
 </html>

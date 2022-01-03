@@ -13,7 +13,7 @@ namespace PlagiarismChecker
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Image1.Visible = false;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -24,6 +24,8 @@ namespace PlagiarismChecker
                 AppController.USERNAME = TextBox1.Text;
                 Response.Redirect("Main menu.aspx");
             }
+            else
+                Image1.Visible = true;
         }
     }
 }
