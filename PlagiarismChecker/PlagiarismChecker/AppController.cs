@@ -32,25 +32,14 @@ namespace PlagiarismChecker.App_Code
             {
                 try
                 {
-                    sb.AppendFormat(" Uploading file: {0}", fileUpload.FileName);
                     //saving the file
                     fileUpload.SaveAs(App_Code.AppController.Save_Directory + fileUpload.FileName);
 
-                    //Showing the file information
-                    sb.AppendFormat("<br/> Save As: {0}", fileUpload.PostedFile.FileName);
-                    sb.AppendFormat("<br/> File type: {0}", fileUpload.PostedFile.ContentType);
-                    sb.AppendFormat("<br/> File length: {0}", fileUpload.PostedFile.ContentLength);
-                    sb.AppendFormat("<br/> File name: {0}", fileUpload.PostedFile.FileName);
                 }
                 catch (Exception ex)
                 {
-                    sb.Append("<br/> Error <br/>");
-                    sb.AppendFormat("Unable to save file <br/> {0}", ex.Message);
+                    
                 }
-            }
-            else
-            {
-
             }
         }
 
