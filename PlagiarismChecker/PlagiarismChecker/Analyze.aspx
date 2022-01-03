@@ -12,6 +12,13 @@
         .cent {
             margin:auto;
         }
+        table, th, td {
+          border: 1px solid black;
+          border-color: #96D4D4;
+          border-radius: 10px;
+          background-color:whitesmoke;
+
+        }
         body {
             background-image: url('XO.png');
             background-size: cover; 
