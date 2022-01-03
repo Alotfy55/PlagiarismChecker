@@ -48,7 +48,7 @@
               <tr>
                 <td >Plagiarism Percentage :</td>
                 <td ><asp:TextBox ID="TextBox1" runat="server" BackColor="whitesmoke" ForeColor="Red" Enabled="false"></asp:TextBox>
-                    <asp:Image ID="Image1" runat="server" alt="gif" src="tumblr_m0txzfEsKv1rrb2iso1_500.gif"/>
+                    <asp:Image ID="Image1" runat="server" alt="gif" src="tumblr_m0txzfEsKv1rrb2iso1_500.gif" Visible="false"/>
                   </td>
               </tr>
             </tbody>

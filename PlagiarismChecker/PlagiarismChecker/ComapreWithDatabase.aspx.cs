@@ -39,8 +39,7 @@ namespace PlagiarismChecker
                     AppController.storeInDatabase(doc);
                 }
             }
-            SimilarityReading reading = new SimilarityReading(FileUpload1.FileName, "Database", similarity);
-            AppController.StoreHistoryReading(reading);
+            AppController.StoreHistoryReading(new SimilarityReading(FileUpload1.FileName, "Database", similarity));
 
         }
     }

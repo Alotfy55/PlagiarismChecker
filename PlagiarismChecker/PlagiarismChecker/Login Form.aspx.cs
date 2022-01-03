@@ -11,6 +11,8 @@ namespace PlagiarismChecker
 {
     public partial class Login_Form : System.Web.UI.Page
     {
+        private static int counter =0;
+        private const int COUNTHRESH = 5;
         protected void Page_Load(object sender, EventArgs e)
         {
             Image1.Visible = false;
@@ -24,8 +26,14 @@ namespace PlagiarismChecker
                 AppController.USERNAME = TextBox1.Text;
                 Response.Redirect("Main menu.aspx");
             }
-            else
+            else if(counter == COUNTHRESH)
+            {
                 Image1.Visible = true;
+            }
+            else
+            {
+                counter++;
+            }
         }
     }
 }

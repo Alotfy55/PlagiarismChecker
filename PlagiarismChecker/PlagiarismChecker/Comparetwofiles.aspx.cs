@@ -36,14 +36,10 @@ namespace PlagiarismChecker
             {
                 AppController.storeInDatabase(doc1);
                 if (similarity < 99) 
-                AppController.storeInDatabase(doc2);
+                    AppController.storeInDatabase(doc2);
             }
-            SimilarityReading reading = new SimilarityReading(FileUpload1.FileName, FileUpload2.FileName, similarity);
-            AppController.StoreHistoryReading(reading);
-            if (similarity > 70) 
-            {
-                Image1.Visible = true;
-            }
+            AppController.StoreHistoryReading(new SimilarityReading(FileUpload1.FileName, FileUpload2.FileName, similarity));
+           
         }
     }
 }
