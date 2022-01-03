@@ -8,6 +8,7 @@
     <style type="text/css">
         body {
             background-image: url('XO.png');
+            background-size: cover; 
         }
         .auto-style1 {
             width: 398px;

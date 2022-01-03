@@ -9,6 +9,7 @@
 
         body {
             background-image: url('XO.png');
+            background-size: cover; 
         }
 
         .auto-style1 {

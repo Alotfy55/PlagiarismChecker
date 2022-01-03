@@ -10,6 +10,7 @@
   
         body {
             background-image: url('XO.png');
+            background-size: cover; 
         }
         .auto-style3 {
             width: 416px;
