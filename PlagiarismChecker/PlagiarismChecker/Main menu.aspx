@@ -51,7 +51,7 @@
                   </tr>
                   <tr>
                     <th class="auto-style3" >
-                        <asp:Button class="auto-style7" ID="Button2" runat="server" Text="Check File" OnClick="Button2_Click"/></th>
+                        <asp:Button class="auto-style7" ID="Button2" runat="server" Text="Compare With Database" OnClick="Button2_Click"/></th>
                   </tr>
                   <tr>
                     <th class="auto-style3" >
@@ -59,12 +59,9 @@
                   </tr>
                   <tr>
                     <th class="auto-style3">
-                        <asp:Button  class="auto-style7" ID="Button4" runat="server" Text="How To Use" OnClick="Button4_Click" /></th>
+                        <asp:Button  class="auto-style7" ID="Button4" runat="server" Text="Analyze Document" OnClick="Button4_Click" /></th>
                   </tr>
-                  <tr>
-                    <th class="auto-style3">
-                        <asp:Button  class="auto-style7" ID="Button5" runat="server" Text="Profile" OnClick="Button5_Click" /></th>
-                  </tr>
+
                 
              </table>
         </div>

@@ -131,7 +131,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Guide.aspx" />
+    <Content Include="Analyze.aspx" />
     <Content Include="History.aspx" />
     <Content Include="Login Form.aspx" />
     <Content Include="Main menu.aspx" />
@@ -185,12 +185,12 @@
     </Compile>
     <Compile Include="DatabaseController.cs" />
     <Compile Include="DocEditor.cs" />
-    <Compile Include="Guide.aspx.cs">
-      <DependentUpon>Guide.aspx</DependentUpon>
+    <Compile Include="Analyze.aspx.cs">
+      <DependentUpon>Analyze.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Guide.aspx.designer.cs">
-      <DependentUpon>Guide.aspx</DependentUpon>
+    <Compile Include="Analyze.aspx.designer.cs">
+      <DependentUpon>Analyze.aspx</DependentUpon>
     </Compile>
     <Compile Include="History.aspx.cs">
       <DependentUpon>History.aspx</DependentUpon>

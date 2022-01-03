@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Guide.aspx.cs" Inherits="PlagiarismChecker.Guide" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Analyze.aspx.cs" Inherits="PlagiarismChecker.Guide" %>
 
 <!DOCTYPE html>
 

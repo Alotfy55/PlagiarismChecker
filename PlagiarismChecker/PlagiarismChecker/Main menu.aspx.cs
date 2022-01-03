@@ -31,7 +31,7 @@ namespace PlagiarismChecker
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Guide");
+            Response.Redirect("Analyze");
         }
 
         protected void Button5_Click(object sender, EventArgs e)
