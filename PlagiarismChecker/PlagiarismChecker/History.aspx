@@ -41,7 +41,7 @@
             <table class="auto-style2">
                 <thead>
                   <tr>
-                    <th colspan="3" class="fontt"> Analyzation </th>
+                    <th colspan="3" class="fontt"> History </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -51,9 +51,18 @@
                     <th class="auto-style1" >Similarity Percentage</th>
                   </tr>
                   <tr>
-                    <td class="auto-style3" ><asp:ListView ID="ListView1" runat="server"></asp:ListView></td>
-                    <td class="auto-style3" ><asp:ListView ID="ListView2" runat="server"></asp:ListView></td>
-                    <td class="auto-style3" ><asp:ListView ID="ListView3" runat="server"></asp:ListView></td>
+                    <td class="auto-style3" >
+                        <asp:GridView ID="GridView1" runat="server" ShowHeader="False">
+                        </asp:GridView>
+                      </td>
+                    <td class="auto-style3" >
+                        <asp:GridView ID="GridView2" runat="server" ShowHeader="False">
+                        </asp:GridView>
+                      </td>
+                    <td class="auto-style3" >
+                        <asp:GridView ID="GridView3" runat="server" ShowHeader="False">
+                        </asp:GridView>
+                      </td>
                   </tr>
                 </tbody>
               </table>           
