@@ -18,8 +18,15 @@
 <body>
     <form id="form1" runat="server">
         <div class="cent">
-            <textarea id="TextArea1" cols="20" rows="2"></textarea>
+            &nbsp;<asp:GridView ID="GridView1" runat="server" ShowHeader="False">
+            </asp:GridView>
+            <asp:GridView ID="GridView2" runat="server" ShowHeader="False">
+            </asp:GridView>
         </div>
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+        <asp:FileUpload ID="FileUpload1" runat="server" />
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>
