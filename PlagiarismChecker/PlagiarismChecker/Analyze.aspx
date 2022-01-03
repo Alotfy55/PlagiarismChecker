@@ -43,8 +43,8 @@
                     <th >Count</th>
                   </tr>
                   <tr>
-                    <td ><asp:GridView ID="GridView1" runat="server" ShowHeader="False"></asp:GridView></td>
-                    <td ><asp:GridView ID="GridView2" runat="server" ShowHeader="False"></asp:GridView></td>
+                    <td ><asp:GridView ID="GridView1" runat="server" ShowHeader="False" BackColor="WhiteSmoke"></asp:GridView></td>
+                    <td ><asp:GridView ID="GridView2" runat="server" ShowHeader="False" BackColor="WhiteSmoke"></asp:GridView></td>
                   </tr>
                 </tbody>
              </table>
