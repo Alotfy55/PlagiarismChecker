@@ -38,7 +38,6 @@ namespace PlagiarismChecker
             GridView1.DataBind();
             GridView2.DataSource = count;
             GridView2.DataBind();
-
         }
     }
 }

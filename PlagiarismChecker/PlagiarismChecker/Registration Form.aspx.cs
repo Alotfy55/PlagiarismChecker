@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using PlagiarismChecker.App_Code;
 
 namespace PlagiarismChecker
 {
@@ -24,7 +25,7 @@ namespace PlagiarismChecker
             {
                 //set el id el gded
                 DatabaseController.insertData(TextBox1.Text, TextBox2.Text);
-                App_Code.AppController.USERNAME = TextBox1.Text;
+                AppController.USERNAME = TextBox1.Text;
                 Response.Redirect("Main menu.aspx");
             }
             else

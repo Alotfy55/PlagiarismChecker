@@ -79,7 +79,6 @@
                   </tr>
                   <tr>
                     <td class="auto-style14">
-                      <!  <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="CustomValidator"></asp:CustomValidator></td> >
                   </tr>
                   <tr>
                     <td class="auto-style11">Password</td>
