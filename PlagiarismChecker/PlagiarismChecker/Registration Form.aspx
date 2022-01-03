@@ -94,29 +94,7 @@
                   <tr>
                     <td class="auto-style14"><asp:CompareValidator ID="CompareValidator1" runat="server"  ForeColor ="Red" ErrorMessage="* Password and confirm password does not match *" Type="String" ControlToCompare="TextBox2" ControlToValidate="TextBox3" Operator="Equal" ></asp:CompareValidator></td>
                   </tr>
-                  <tr>
-                    <td class="auto-style11" rowspan="3">Age</td>
-                    <td class="auto-style10" rowspan="3"><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox></td>
-                    <td class="auto-style23"><asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server"  ForeColor ="Red" ControlToValidate="TextBox4" ErrorMessage="* This Field is required *"></asp:RequiredFieldValidator></td>
-                  </tr>
-                  <tr>
-                    <td class="auto-style23"><asp:CompareValidator ID="CompareValidator2" runat="server"  ForeColor ="Red" ErrorMessage="* Age Must be more than 20 *"  ValueToCompare="20" Type ="Integer" Operator="GreaterThan" ControlToValidate="TextBox4"></asp:CompareValidator></td>
-                  </tr>
-                  <tr>
-                    <td class="auto-style23">
-                        <asp:CompareValidator ID="CompareValidator3" runat="server" ForeColor ="Red" ErrorMessage="* Age must be Number *" ControlToValidate="TextBox4" Operator="DataTypeCheck" Type="Integer"></asp:CompareValidator></td>
-                  </tr>
-                
-       
-                  <tr>
-                    <td class="auto-style11">Gender</td>
-                    <td class="auto-style10"><asp:RadioButtonList ID="RadioButtonList1" runat="server">
-                                    <asp:ListItem  >Male</asp:ListItem>
-                                    <asp:ListItem>Female</asp:ListItem>
-                                    <asp:ListItem>Other</asp:ListItem>
-                                    </asp:RadioButtonList></td>
-    
-                  </tr>
+
                   <tr>
                       <td></td>
                     <td class="auto-style24" >
