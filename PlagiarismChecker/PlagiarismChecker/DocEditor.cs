@@ -80,7 +80,7 @@ namespace PlagiarismChecker.App_Code
 
         private static void storeInDatabase(Dictionary<string, int> documentData)
         {
-            // store in database
+            DatabaseController.InsertDocument(documentData);
         }
     }
 }
