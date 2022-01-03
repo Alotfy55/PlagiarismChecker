@@ -36,15 +36,15 @@
               </tr>
                 <tr>
                 <td class="auto-style1" >
-                    <asp:CheckBox ID="CheckBox1" runat="server" Text="Save to History" />
+                    <asp:CheckBox ID="CheckBox1" runat="server" Text="Save to Database" />
                     </td>
               </tr>
               <tr>
-                <td class="auto-style1" ><asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="compare" /></td>
+                <td class="auto-style1" ><asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Compare" /></td>
               </tr>
               
               <tr>
-                <td class="auto-style1" >Plagiarism Percentage % : <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+                <td class="auto-style1" >Plagiarism Percentage : <asp:TextBox ID="TextBox1" runat="server" Enabled="false"></asp:TextBox></td>
               </tr>
             </table>          
         </div>

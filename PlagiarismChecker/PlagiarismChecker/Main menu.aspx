@@ -51,7 +51,7 @@
                   </tr>
                   <tr>
                     <th class="auto-style3" >
-                        <asp:Button class="auto-style7" ID="Button2" runat="server" Text="Check File" OnClick="Button2_Click"/></th>
+                        <asp:Button class="auto-style7" ID="Button2" runat="server" Text="Compare With Database" OnClick="Button2_Click"/></th>
                   </tr>
                   <tr>
                     <th class="auto-style3" >

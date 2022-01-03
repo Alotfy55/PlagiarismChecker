@@ -32,22 +32,22 @@
             </thead>
             <tbody>
               <tr>
-                <td >Document 1 </td>
+                <td >Document 1 :</td>
                 <td ><asp:FileUpload ID="FileUpload1" runat="server" /></td>
               </tr>
               <tr>
-                <td >Document 2</td>
+                <td >Document 2 :</td>
                 <td ><asp:FileUpload ID="FileUpload2" runat="server" /></td>
               </tr>
               <tr>
-                <td  colspan="2"><asp:CheckBox ID="CheckBox1" runat="server" Text="Save to History" /></td>
+                <td  colspan="2"><asp:CheckBox ID="CheckBox1" runat="server" Text="Save to Database" /></td>
               </tr>
               <tr>
-                <td  colspan="2"> <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="compare" /></td>
+                <td  colspan="2"> <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Compare" /></td>
               </tr>
               <tr>
-                <td >Plagiarism Percentage % :</td>
-                <td ><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+                <td >Plagiarism Percentage :</td>
+                <td ><asp:TextBox ID="TextBox1" runat="server" Enabled="false"></asp:TextBox></td>
               </tr>
             </tbody>
             </table>
