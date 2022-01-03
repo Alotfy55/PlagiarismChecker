@@ -131,8 +131,13 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="HomePage.aspx" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="Guide.aspx" />
+    <Content Include="History.aspx" />
+    <Content Include="Login Form.aspx" />
+    <Content Include="Main menu.aspx" />
+    <Content Include="Profile.aspx" />
+    <Content Include="Registration Form.aspx" />
+    <Content Include="Comparetwofiles.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -180,19 +185,54 @@
     </Compile>
     <Compile Include="DatabaseController.cs" />
     <Compile Include="DocEditor.cs" />
-    <Compile Include="HomePage.aspx.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
+    <Compile Include="Guide.aspx.cs">
+      <DependentUpon>Guide.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HomePage.aspx.designer.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
+    <Compile Include="Guide.aspx.designer.cs">
+      <DependentUpon>Guide.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login Form.aspx.cs">
+      <DependentUpon>Login Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login Form.aspx.designer.cs">
+      <DependentUpon>Login Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main menu.aspx.cs">
+      <DependentUpon>Main menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main menu.aspx.designer.cs">
+      <DependentUpon>Main menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration Form.aspx.cs">
+      <DependentUpon>Registration Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration Form.aspx.designer.cs">
+      <DependentUpon>Registration Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comparetwofiles.aspx.cs">
+      <DependentUpon>Comparetwofiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comparetwofiles.aspx.designer.cs">
+      <DependentUpon>Comparetwofiles.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

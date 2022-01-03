@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace PlagiarismChecker
 {
-    public partial class HomePage : System.Web.UI.Page
+    public partial class Login_Form : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,12 +16,8 @@ namespace PlagiarismChecker
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //opens WebForm 1
-        }
-
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            // opens compare with database
+            Response.Redirect("Main menu.aspx");
+            
         }
     }
 }
