@@ -16,8 +16,12 @@ namespace PlagiarismChecker
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Main menu.aspx");
-            
+
+            if (DatabaseController.checkPassword(TextBox1.Text, TextBox2.Text))
+            {
+                PlagiarismChecker.App_Code.AppController.USERNAME = TextBox1.Text;
+                Response.Redirect("Main menu.aspx");
+            }
         }
     }
 }
