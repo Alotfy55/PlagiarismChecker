@@ -100,6 +100,7 @@ namespace PlagiarismChecker
             SqlCommand comm = new SqlCommand("insert into Users (Username,Password) values(@a,@b)", conn);
             comm.Parameters.Add(new SqlParameter("@a", username));
             comm.Parameters.Add(new SqlParameter("@b", password));
+            comm.ExecuteNonQuery();
             conn.Close();
         }
 
@@ -156,6 +157,7 @@ namespace PlagiarismChecker
             comm.Parameters.Add(new SqlParameter("@b", reading.doc2Name));
             comm.Parameters.Add(new SqlParameter("@c", reading.similarity));
             comm.Parameters.Add(new SqlParameter("@d", username));
+            comm.ExecuteNonQuery();
             conn.Close();
         }
     }

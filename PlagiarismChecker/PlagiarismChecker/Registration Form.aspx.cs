@@ -16,7 +16,21 @@ namespace PlagiarismChecker
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Main menu.aspx");
+            //el esm uniqe
+            bool isUnique = true;
+            if (!DatabaseController.checkUsernameAvailability(TextBox1.Text))
+                isUnique = false;
+            if (isUnique)
+            {
+                //set el id el gded
+                DatabaseController.insertData(TextBox1.Text, TextBox2.Text);
+                App_Code.AppController.USERNAME = TextBox1.Text;
+                Response.Redirect("Main menu.aspx");
+            }
+            else
+            {
+                TextBox1.BorderColor = System.Drawing.Color.Red;
+            }
         }
     }
 }
